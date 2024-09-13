@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="GridQuickFixLayout">
+    <Menus>
+      <Menu guid="GridQuickFixLayout" id="SubMenu" priority="0x0600" type="Menu">
+        <Parent guid="GridQuickFixLayout" id="SubMenuGroup"/>
+        <Strings>
+          <ButtonText>Fix Grid Layout</ButtonText>
+          <CommandName>Fix Grid Layout</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Groups>
+      <Group guid="GridQuickFixLayout" id="ButtonsGroup" priority="0x0600">
+        <Parent guid="GridQuickFixLayout" id="SubMenu"/>
+      </Group>
+      <Group guid="GridQuickFixLayout" id="SubMenuGroup" priority="0x0600">
+        <Parent guid="VSMainMenu" id="Tools"/>
+      </Group>
+    </Groups>
+
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <Button guid="GridQuickFixLayout" id="GridColumnIncrementCommand" priority="0x0100" type="Button">
+        <Parent guid="GridQuickFixLayout" id="ButtonsGroup" />
+        <Icon guid="ImageCatalogGuid" id="Add" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Column Increment</ButtonText>
+          <LocCanonicalName>.GridQuickFixLayout.GridColumnIncrementCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="GridQuickFixLayout" id="GridColumnDecrementCommand" priority="0x0200" type="Button">
+        <Parent guid="GridQuickFixLayout" id="ButtonsGroup" />
+        <Icon guid="ImageCatalogGuid" id="Remove" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Column Decrement</ButtonText>
+          <LocCanonicalName>.GridQuickFixLayout.GridColumnDecrementCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="GridQuickFixLayout" id="GridColumnFillInSequenceCommand" priority="0x0300" type="Button">
+        <Parent guid="GridQuickFixLayout" id="ButtonsGroup" />
+        <Icon guid="ImageCatalogGuid" id="TXRowCount" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Column Fill In Sequence</ButtonText>
+          <LocCanonicalName>.GridQuickFixLayout.GridColumnFillInSequenceCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+
+
+      <Button guid="GridQuickFixLayout" id="GridRowIncrementCommand" priority="0x0400" type="Button">
+        <Parent guid="GridQuickFixLayout" id="ButtonsGroup" />
+        <Icon guid="ImageCatalogGuid" id="Add" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Row Increment</ButtonText>
+          <LocCanonicalName>.GridQuickFixLayout.GridRowIncrementCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="GridQuickFixLayout" id="GridRowDecrementCommand" priority="0x0500" type="Button">
+        <Parent guid="GridQuickFixLayout" id="ButtonsGroup" />
+        <Icon guid="ImageCatalogGuid" id="Remove" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Row Decrement</ButtonText>
+          <LocCanonicalName>.GridQuickFixLayout.GridRowDecrementCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="GridQuickFixLayout" id="GridRowFillInSequenceCommand" priority="0x0600" type="Button">
+        <Parent guid="GridQuickFixLayout" id="ButtonsGroup" />
+        <Icon guid="ImageCatalogGuid" id="TXRowCount" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Row Fill In Sequence</ButtonText>
+          <LocCanonicalName>.GridQuickFixLayout.GridRowFillInSequenceCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="GridQuickFixLayout" value="{62b4acbb-e1c9-4b13-921d-86734607fbc0}">
+      <IDSymbol name="ButtonsGroup" value="0x0001" />
+      <IDSymbol name="SubMenu" value="0x0002" />
+      <IDSymbol name="SubMenuGroup" value="0x0003" />
+      <IDSymbol name="GridColumnIncrementCommand" value="0x0100" />
+      <IDSymbol name="GridColumnDecrementCommand" value="0x0200" />
+      <IDSymbol name="GridColumnFillInSequenceCommand" value="0x0300" />
+      <IDSymbol name="GridRowIncrementCommand" value="0x0400" />
+      <IDSymbol name="GridRowDecrementCommand" value="0x0500" />
+      <IDSymbol name="GridRowFillInSequenceCommand" value="0x0600" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
