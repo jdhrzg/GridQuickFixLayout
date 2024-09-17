@@ -1,5 +1,7 @@
 # GridQuickFixLayout
 
+Download, install, and rate my extension on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=JerodHerzog.GridQuickFixLayout).
+
 When working with XAML you'll use Grids everywhere.  Their rows and columns are not very flexible to change (see manual update gif below).  Despite these facts Visual Studio doesn't give you any help when working with them.
 
 This extension fills some of that tooling gap; improving the speed and accuracy of your Grid layout changes.
